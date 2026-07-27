@@ -14,12 +14,14 @@ Citizens report issues with photo, description, and auto-captured GPS location
 System automatically assigns the complaint to the nearest worker within a 5km service radius
 Workers resolve issues and upload completion proof
 Citizens receive real-time status updates throughout the process
+
 👥 User Roles
 Role	Capabilities
 Citizen	Report issues, track complaint status, receive notifications
 Worker	View assigned tasks, update status, upload resolution proof
 Department Admin	Manage department complaints, register workers, verify resolution
 Super Admin	Oversee all departments, manage users, view analytics, generate reports
+
 ⚙️ Key Features
 📸 Issue reporting with image upload and description
 📍 Automatic GPS location capture
@@ -30,6 +32,7 @@ Super Admin	Oversee all departments, manage users, view analytics, generate repo
 🗺️ Map integration for location visualization
 🔔 Notification system for status updates
 🛠️ Tech Stack
+
 Layer	Technology
 Frontend	React.js
 Backend	Node.js, Express.js
@@ -38,60 +41,3 @@ Authentication	JWT (JSON Web Token)
 Map Integration	Leaflet / OpenStreetMap
 Image Storage	Cloudinary
 🚀 Getting Started
-Prerequisites
-Node.js (v16+)
-MongoDB
-Cloudinary account
-Installation
-Clone the repository
-
-git clone https://github.com/your-username/civic-issue-reporting.git
-cd civic-issue-reporting
-Install backend dependencies
-
-cd server
-npm install
-Install frontend dependencies
-
-cd client
-npm install
-Set up environment variables
-
-Create a .env file in the server directory:
-
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-Run the application
-
-# Start backend
-cd server
-npm run dev
-
-# Start frontend (in a new terminal)
-cd client
-npm start
-Open http://localhost:3000 in your browser.
-
-📂 Project Structure
-civic/
-├── client/              # React.js frontend
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       └── ...
-├── server/              # Node.js + Express backend
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   └── ...
-├── .env
-├── README.md
-└── PRD.md
-🔄 Issue Status Flow
-Submitted → Assigned to Worker → In Progress → Resolved → Closed
